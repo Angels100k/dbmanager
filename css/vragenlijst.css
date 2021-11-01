@@ -1,0 +1,30 @@
+.page-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.page-description {
+    font-weight: bold;
+}
+
+.question-textinput {
+    width: 200px;
+}
+
+.inputWrapper label{
+    margin-top: 10px;
+    display: block;
+    margin-left: 10px;
+}
+
+.pagebutton{
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.questionContainer .category:not(:first-child) {
+    display: none;
+}
+
+label {
+    font-weight: 500;
+}

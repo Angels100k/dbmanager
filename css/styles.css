@@ -1,0 +1,21 @@
+.containerTest {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+.animated{
+    width:50%;
+}
+.VragenlijstButton {
+    background-color: darkcyan;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: auto;
+    height: 50px;
+    color: white;
+}
+
+.VragenlijstButton p{
+    margin-top: 0.8rem;
+}
