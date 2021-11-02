@@ -106,8 +106,13 @@ $databases = $sqlQuery->databases();
                          htmltable += `
                          <tr>
                             <td>`+ element +`</td>
-                            <td>Edit</td>
-                            <td>Delete</td>
+                            <td>
+                                <button type='button' id='btnUpdate'>Update</button>
+                            </td>
+                            <td>
+                                <button type='button' id='btnDelete'>Delete</button>
+                            </td>
+        
                         </tr>
                          `;
                     }
@@ -120,6 +125,52 @@ $databases = $sqlQuery->databases();
                     }else {
                         $('div[id^="container_"]').css('display', 'none');
                     }
+                }
+            });
+        }
+        function databasetableinfo(tableelement){
+            console.log(tableelement);
+            $.ajax({
+                type: "GET",
+                url: "selects/tableinfo.php",
+                data: "table=" + tableelement, // serializes the form's elements.
+                //  when it is a sucsess so this with the data it got back
+                success: function(data)
+                {
+                     // higher the questions value so next form knows when to update and when to insert
+                     htmltable = `<thead><tr>`;
+                     json = JSON.parse(data);
+                    console.log(json);
+                    //  for (const element of json) {
+                    //     htmltable += `
+                    //         <th>Tablename</th>`;
+                    //  }
+                    //  htmltable += `</tr></thead>`;
+                    //  for (const element of json) {
+                    //      html += "<a href='javascript:void(0);' class='db_container_data' onclick='databasetableinfo(`" + element + "`);'>"+ element +"</a>";
+
+                    //      htmltable += `
+                    //      <tr>
+                    //         <td>`+ element +`</td>
+                    //         <td>
+                    //             <button type='button' id='btnUpdate'>Update</button>
+                    //         </td>
+                    //         <td>
+                    //             <button type='button' id='btnDelete'>Delete</button>
+                    //         </td>
+        
+                    //     </tr>
+                    //      `;
+                    // }
+                    // $( "#container_" + database ).html(html);
+                    // $( "#dbtable").html(htmltable);
+                    // if ($("#container_" + database).css('display') == 'none')
+                    // {
+                    //     $('div[id^="container_"]').css('display', 'none');
+                    //     $( "#container_" + database ).toggle();
+                    // }else {
+                    //     $('div[id^="container_"]').css('display', 'none');
+                    // }
                 }
             });
         }

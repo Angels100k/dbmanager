@@ -25,4 +25,14 @@ class Sql {
       $stmt->execute();
       return $stmt;
     }
+
+    public function getTable($db, $table){
+      $sql = "use " . $db . ";";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute();
+      $sql = "SELECT * FROM $table";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute();
+      return $stmt;
+    }
 }
