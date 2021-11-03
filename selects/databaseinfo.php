@@ -12,4 +12,5 @@ $databasesarray = array();
 while ($row = $data->fetch()){
     array_push($databasesarray, $row["Tables_in_" . $_GET["database"]]);
 }
+$_SESSION['db'] = $_GET["database"];
 echo json_encode($databasesarray);

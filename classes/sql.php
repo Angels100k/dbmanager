@@ -26,6 +26,15 @@ class Sql {
       return $stmt;
     }
 
+    public function updatetable($db, $table, $newName){
+      $sql = "use " . $db . ";";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute();
+      $sql = "ALTER TABLE $table RENAME TO $newName;";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute();
+    }
+
     public function getTable($db, $table){
       $sql = "use " . $db . ";";
       $stmt = $this->conn->prepare($sql);

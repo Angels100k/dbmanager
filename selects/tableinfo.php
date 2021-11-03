@@ -31,7 +31,6 @@ while ($row = $data->fetch())
     //  //    array_push($databasevalue, array($key => $value));
     }
      $i++;
-     next($row);
 }
 array_push($databasefinal, $databasekey);
 array_push($databasefinal, $databasevalue);
