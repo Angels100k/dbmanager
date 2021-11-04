@@ -7,32 +7,36 @@ $database = new Dbconfig($_SESSION['Username'], $_SESSION['password']);
 $db = $database->getConnection();
 $sqlQuery = new Sql($db['db']);
 
-$data = $sqlQuery->getTable($_GET["db"],$_GET["table"]);
+$structure = $sqlQuery->getTableStructure($_SESSION["db"],$_GET["table"]);
+
 $databasekey = array();
 $databasevalue = array();
-$databasefinal = array();
-$i=0;
-foreach ($data->fetch() as $key => $value){
-  
+$databasefinal = array_fill_keys(
+    array('key', 'value'), array());
+
+
+while ($row = $structure->fetch()){
+    array_push($databasekey, $row["Field"]);
 }
 
-while ($row = $data->fetch())
-{
-    if($i % 2 == 0){
-        // echo json_encode(key($row));
-        while ($fruit_name = current($row)) {
-            echo key($row), "\n";
-            next($row);
+array_push($databasefinal["key"], $databasekey);
+
+$data = $sqlQuery->getTable($_SESSION["db"],$_GET["table"]);
+while ($row = $data->fetch()){
+    $i=0;
+    $databaseval = array();
+
+    foreach ($row as $key => $value) {
+        if($i % 2 == 0){
+            array_push($databaseval, $value);
         }
-//     array_push($databasekey, $key);
-    //     array_push($databasevalue, array($key => $value));
-    //      }
-    //  //    array_push($databasekey, $key);
-    //  //    array_push($databasevalue, array($key => $value));
+        $i++;
     }
-     $i++;
+    array_push($databasevalue, $databaseval);
 }
-array_push($databasefinal, $databasekey);
-array_push($databasefinal, $databasevalue);
+array_push($databasefinal["value"], $databasevalue);
 
-// echo json_encode($databasefinal);
+$databasefinal["key"] = $databasefinal["key"][0];
+$databasefinal["value"] = $databasefinal["value"][0];
+
+echo json_encode($databasefinal);

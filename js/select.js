@@ -39,6 +39,7 @@ function databaseinfo(database) {
         }
     });
 }
+
 function updateTable(tableelement, dbname){
     $.ajax({
         type: "GET",
@@ -54,8 +55,8 @@ function updateTable(tableelement, dbname){
         }
     });
 }
+
 function databasetableinfo(tableelement){
-    console.log(tableelement);
     $.ajax({
         type: "GET",
         url: "selects/tableinfo.php",
@@ -64,9 +65,9 @@ function databasetableinfo(tableelement){
         success: function(data)
         {
              // higher the questions value so next form knows when to update and when to insert
-             htmltable = `<thead><tr>`;
+            //  htmltable = `<thead><tr>`;
              json = JSON.parse(data);
-            console.log(json);
+            console.log(json["key"]);
             //  for (const element of json) {
             //     htmltable += `
             //         <th>Tablename</th>`;

@@ -15,6 +15,11 @@ class Sql {
       $stmt->execute();
       return $stmt;
     }
+    private function usedb($db){
+      $sql = "use " . $db . ";";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute();
+    } 
 
     public function getdb($db){
       $sql = "use " . $db . ";";
@@ -27,18 +32,22 @@ class Sql {
     }
 
     public function updatetable($db, $table, $newName){
-      $sql = "use " . $db . ";";
-      $stmt = $this->conn->prepare($sql);
-      $stmt->execute();
+      $this->usedb($db);
       $sql = "ALTER TABLE $table RENAME TO $newName;";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute();
     }
 
-    public function getTable($db, $table){
-      $sql = "use " . $db . ";";
+    public function getTableStructure($db, $table){
+      $this->usedb($db);
+      $sql = "DESCRIBE $table";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute();
+      return $stmt;
+    }
+    
+    public function getTable($db, $table){
+      $this->usedb($db);
       $sql = "SELECT * FROM $table";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute();

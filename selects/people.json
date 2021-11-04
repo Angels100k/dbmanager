@@ -1,1 +1,180 @@
-{"table":"antwoord","newName":"antwoorden"}
+array(12) {
+    ["ID"] => string(1)
+    "1" [0] => string(1)
+    "1" ["gebruiker_ID"] => string(1)
+    "1" [1] => string(1)
+    "1" ["rekeningnummer"] => string(18)
+    "NL37RABO0123008387" [2] => string(18)
+    "NL37RABO0123008387" ["actief"] => string(10)
+    "Nonactieft" [3] => string(10)
+    "Nonactieft" ["saldo"] => string(8)
+    "30365.00" [4] => string(8)
+    "30365.00" ["wachtwoord"] => string(60)
+    "$2y$12$ymD4duIrVNPEQXtCfRv7Ku1OqNJhRvO8NNBAA6nNU9FxLC41ISzRi" [5] => string(60)
+    "$2y$12$ymD4duIrVNPEQXtCfRv7Ku1OqNJhRvO8NNBAA6nNU9FxLC41ISzRi"
+}
+array(12) {
+    ["ID"] => string(1)
+    "2" [0] => string(1)
+    "2" ["gebruiker_ID"] => string(1)
+    "1" [1] => string(1)
+    "1" ["rekeningnummer"] => string(18)
+    "NL37RABO0123008323" [2] => string(18)
+    "NL37RABO0123008323" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(9)
+    "119505.50" [4] => string(9)
+    "119505.50" ["wachtwoord"] => string(60)
+    "$2y$12$ymD4duIrVNPEQXtCfRv7Ku1OqNJhRvO8NNBAA6nNU9FxLC41ISzRi" [5] => string(60)
+    "$2y$12$ymD4duIrVNPEQXtCfRv7Ku1OqNJhRvO8NNBAA6nNU9FxLC41ISzRi"
+}
+array(12) {
+    ["ID"] => string(1)
+    "3" [0] => string(1)
+    "3" ["gebruiker_ID"] => string(1)
+    "2" [1] => string(1)
+    "2" ["rekeningnummer"] => string(18)
+    "NL37RABO0123238323" [2] => string(18)
+    "NL37RABO0123238323" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(9)
+    "119505.50" [4] => string(9)
+    "119505.50" ["wachtwoord"] => string(60)
+    "$2y$12$ymD4duIrVNPEQXtCfRv7Ku1OqNJhRvO8NNBAA6nNU9FxLC41ISzRi" [5] => string(60)
+    "$2y$12$ymD4duIrVNPEQXtCfRv7Ku1OqNJhRvO8NNBAA6nNU9FxLC41ISzRi"
+}
+array(12) {
+    ["ID"] => string(2)
+    "43" [0] => string(2)
+    "43" ["gebruiker_ID"] => string(1)
+    "6" [1] => string(1)
+    "6" ["rekeningnummer"] => string(18)
+    "NL69RABO3475241450" [2] => string(18)
+    "NL69RABO3475241450" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(4)
+    "0.00" [4] => string(4)
+    "0.00" ["wachtwoord"] => string(60)
+    "$2y$12$sV2KspttFFrq882NtQ1Dlu9gVuIumCD0cWViZlWTV.a//VLDbJ3n." [5] => string(60)
+    "$2y$12$sV2KspttFFrq882NtQ1Dlu9gVuIumCD0cWViZlWTV.a//VLDbJ3n."
+}
+array(12) {
+    ["ID"] => string(2)
+    "44" [0] => string(2)
+    "44" ["gebruiker_ID"] => string(1)
+    "7" [1] => string(1)
+    "7" ["rekeningnummer"] => string(18)
+    "NL21RABO6119991538" [2] => string(18)
+    "NL21RABO6119991538" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(4)
+    "0.00" [4] => string(4)
+    "0.00" ["wachtwoord"] => string(60)
+    "$2y$12$K1bKWcQ7t.fYMMXHgUfabuM0pTzNl0wkhs1l9jSAUIN5g9Y/oIwM2" [5] => string(60)
+    "$2y$12$K1bKWcQ7t.fYMMXHgUfabuM0pTzNl0wkhs1l9jSAUIN5g9Y/oIwM2"
+}
+array(12) {
+    ["ID"] => string(2)
+    "45" [0] => string(2)
+    "45" ["gebruiker_ID"] => string(1)
+    "3" [1] => string(1)
+    "3" ["rekeningnummer"] => string(18)
+    "NL22RABO6448727742" [2] => string(18)
+    "NL22RABO6448727742" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(4)
+    "0.00" [4] => string(4)
+    "0.00" ["wachtwoord"] => string(60)
+    "$2y$12$1uxAHOERyJ712j1DgEU5sej0pZkIroPXPzwA7wdWWi.iEf00mror6" [5] => string(60)
+    "$2y$12$1uxAHOERyJ712j1DgEU5sej0pZkIroPXPzwA7wdWWi.iEf00mror6"
+}
+array(12) {
+    ["ID"] => string(2)
+    "47" [0] => string(2)
+    "47" ["gebruiker_ID"] => string(2)
+    "25" [1] => string(2)
+    "25" ["rekeningnummer"] => string(18)
+    "NL26RABO3891749956" [2] => string(18)
+    "NL26RABO3891749956" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(4)
+    "0.00" [4] => string(4)
+    "0.00" ["wachtwoord"] => string(60)
+    "$2y$12$TxADA5c4b1H6pDC.ZFbz1euClxA0FmA71cIlxyKESHZEVY4kC/1I6" [5] => string(60)
+    "$2y$12$TxADA5c4b1H6pDC.ZFbz1euClxA0FmA71cIlxyKESHZEVY4kC/1I6"
+}
+array(12) {
+    ["ID"] => string(2)
+    "48" [0] => string(2)
+    "48" ["gebruiker_ID"] => string(1)
+    "8" [1] => string(1)
+    "8" ["rekeningnummer"] => string(18)
+    "NL81RABO3992890827" [2] => string(18)
+    "NL81RABO3992890827" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(4)
+    "0.00" [4] => string(4)
+    "0.00" ["wachtwoord"] => string(60)
+    "$2y$12$3ps8L08P1e8M6MYlZjuMzej3YJ09T2sEvIeHJZNsLDX72GLeYjAGK" [5] => string(60)
+    "$2y$12$3ps8L08P1e8M6MYlZjuMzej3YJ09T2sEvIeHJZNsLDX72GLeYjAGK"
+}
+array(12) {
+    ["ID"] => string(2)
+    "49" [0] => string(2)
+    "49" ["gebruiker_ID"] => string(2)
+    "26" [1] => string(2)
+    "26" ["rekeningnummer"] => string(18)
+    "NL52RABO2217702941" [2] => string(18)
+    "NL52RABO2217702941" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(4)
+    "0.00" [4] => string(4)
+    "0.00" ["wachtwoord"] => string(60)
+    "$2y$12$SG1n.PftAbY0tFspKanTCOfj3oyEXA5EkN9tZMGZ0G/lhrM8JkOty" [5] => string(60)
+    "$2y$12$SG1n.PftAbY0tFspKanTCOfj3oyEXA5EkN9tZMGZ0G/lhrM8JkOty"
+}
+array(12) {
+    ["ID"] => string(2)
+    "50" [0] => string(2)
+    "50" ["gebruiker_ID"] => string(2)
+    "26" [1] => string(2)
+    "26" ["rekeningnummer"] => string(18)
+    "NL99RABO7384597451" [2] => string(18)
+    "NL99RABO7384597451" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(4)
+    "0.00" [4] => string(4)
+    "0.00" ["wachtwoord"] => string(60)
+    "$2y$12$FOUuEKmAuYK0RIONnRyet.al8xnUSn1udTf5qhzlq4VttWI62awCK" [5] => string(60)
+    "$2y$12$FOUuEKmAuYK0RIONnRyet.al8xnUSn1udTf5qhzlq4VttWI62awCK"
+}
+array(12) {
+    ["ID"] => string(2)
+    "51" [0] => string(2)
+    "51" ["gebruiker_ID"] => string(1)
+    "7" [1] => string(1)
+    "7" ["rekeningnummer"] => string(18)
+    "NL42RABO3937019783" [2] => string(18)
+    "NL42RABO3937019783" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(4)
+    "0.00" [4] => string(4)
+    "0.00" ["wachtwoord"] => string(60)
+    "$2y$12$8IpYYfuVxq.p9Y6mInWGLOq6s3kwT6I3S/H2qovrTbOahPOoCo9KS" [5] => string(60)
+    "$2y$12$8IpYYfuVxq.p9Y6mInWGLOq6s3kwT6I3S/H2qovrTbOahPOoCo9KS"
+}
+array(12) {
+    ["ID"] => string(2)
+    "56" [0] => string(2)
+    "56" ["gebruiker_ID"] => string(1)
+    "1" [1] => string(1)
+    "1" ["rekeningnummer"] => string(18)
+    "NL93RABO6867762476" [2] => string(18)
+    "NL93RABO6867762476" ["actief"] => string(6)
+    "Actief" [3] => string(6)
+    "Actief" ["saldo"] => string(4)
+    "0.00" [4] => string(4)
+    "0.00" ["wachtwoord"] => string(60)
+    "$2y$12$d8TpPUQ2W.uiRTPT5Wp.TOije/5l4gGcUBd64yWbXgbVgpRIpdd8W" [5] => string(60)
+    "$2y$12$d8TpPUQ2W.uiRTPT5Wp.TOije/5l4gGcUBd64yWbXgbVgpRIpdd8W"
+}
